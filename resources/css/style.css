@@ -22,6 +22,15 @@ p {
 	font-weight: 300;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.fa {
+	padding: 0 0.75rem;
+}
+
 /*Nav*/
 
 nav {
@@ -43,10 +52,4 @@ li {
 
 footer {
 	text-align: center;
-}
-
-a {
-	color: black;
-	padding: 0 0.5rem;
-	text-decoration: none;
 }
