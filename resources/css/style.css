@@ -17,6 +17,7 @@ h2 {
 
 p {
 	font-family: sans-serif;
+	margin: 0;
 }
 
 a {
@@ -43,6 +44,30 @@ li {
 	padding: 0 0.75rem;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
+}
+
+/*About my dad*/
+
+#about-my-dad {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	align-items: center;
+}
+
+#about-my-dad-grid-item-a {
+
+}
+
+#about-my-dad-grid-item-b {
+
+}
+
+#about-my-dad-grid-item-c {
+	
+}
+
+#about-my-dad-grid-item-d {
+
 }
 
 /*Footer*/
