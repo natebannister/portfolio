@@ -29,6 +29,11 @@ a {
 	padding: 0 0.75rem;
 }
 
+.grid-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 /*Nav*/
 
 nav {
@@ -42,32 +47,108 @@ ul {
 li {
 	display: inline;
 	padding: 0 0.75rem;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 600;
 }
 
 /*About my dad*/
 
 #about-my-dad {
 	display: grid;
-	grid-template: 1fr 1fr / 1fr 1fr;
-	align-items: center;
+	width: 80%;
+	grid-template: 3fr 2fr 3fr 1fr 3fr 2fr 3fr / 2fr 1fr 2fr;/*Need to put some max values on this for responsiveness*/
+	justify-content: center;/*This isn't working?*/
+	margin: 0 auto;
 }
 
 #about-my-dad-grid-item-a {
-
+	grid-area: 1 / 1 / span 3 / span 2;
 }
 
 #about-my-dad-grid-item-b {
-
+    grid-area: 2 / 2 / span 1 / span 2;
 }
 
 #about-my-dad-grid-item-c {
-	
+	grid-area: 6 / 1 / span 1 / span 2;
+	z-index: 1;
 }
 
 #about-my-dad-grid-item-d {
+    grid-area: 5 / 2 / span 3 / span 2;
+}
 
+/*My dad's work*/
+
+#my-dads-work {
+	display: grid;
+	grid-auto-flow: column;
+	width: 90%;
+	grid-template: 1.5fr 1fr/ 1fr 1fr 1fr;
+	margin: 0 auto;
+	justify-content: center;/*This isn't working?*/
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 0.75rem;
+}
+
+#my-dads-work p {
+	padding: 0 0.25rem;
+}
+
+/*About me (Ralph)*/
+
+#about-me-ralph {
+	display: grid;
+	width: 80%;
+	grid-template: 1fr 2.5fr 1fr 2.5fr 1fr 2.5fr 1fr 2.5fr 1fr 2.5fr 1fr 2.5fr 1fr/ 3fr 0.1fr 2fr 1fr 2fr 0.1fr 3fr;
+	justify-content: center;/*This isn't working?*/
+	margin: 0 auto;
+}
+
+#about-me-ralph-grid-item-a {
+	grid-area: 1 / 3 / span 3 / span 2;
+}
+
+#about-me-ralph-grid-item-b {
+	grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#about-me-ralph-grid-item-c {
+	grid-area: 3 / 4 / span 3 / span 2;
+}
+
+#about-me-ralph-grid-item-d {
+	grid-area: 4 / 7 / span 1 / span 1;
+}
+
+#about-me-ralph-grid-item-e {
+	grid-area: 5 / 3 / span 3 / span 2;
+}
+
+#about-me-ralph-grid-item-f {
+	grid-area: 6 / 1 / span 1 / span 1;
+}
+
+#about-me-ralph-grid-item-g {
+	grid-area: 7 / 4 / span 3 / span 2;
+}
+
+#about-me-ralph-grid-item-h {
+	grid-area: 8 / 7 / span 1 / span 1;
+}
+
+#about-me-ralph-grid-item-i {
+	grid-area: 9 / 3 / span 3 / span 2;
+}
+
+#about-me-ralph-grid-item-j {
+	grid-area: 10 / 1 / span 1 / span 1;
+}
+
+#about-me-ralph-grid-item-k {
+	grid-area: 11 / 4 / span 3 / span 2;
+}
+
+#about-me-ralph-grid-item-l {
+	grid-area: 12 / 7 / span 1 / span 1;
 }
 
 /*Footer*/
