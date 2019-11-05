@@ -55,7 +55,6 @@ li {
 #about-my-dad {
 	display: grid;
 	width: 70%;
-	/*grid-template: 2fr minmax(11.25rem, 4fr) 2fr 1fr 2fr minmax(11.25rem, 4fr) 2fr / 2fr 1fr 2fr;*//*Need to put some max values on this for responsiveness*/
 	grid-template: 22.5rem 2.5% 22.5rem / 2fr 1fr 2fr;
 	justify-content: center;/*This isn't working?*/
 	align-items: center;
@@ -63,24 +62,24 @@ li {
 }
 
 #about-my-dad-grid-item-a {
-	/*grid-area: 1 / 1 / span 3 / span 2;*/
 	grid-area: 1 / 1 / span 1 / span 2;
 }
 
 #about-my-dad-grid-item-b {
-    /*grid-area: 2 / 2 / span 1 / span 2;*/
     grid-area: 1 / 2 / span 1 / span 2;
 }
 
 #about-my-dad-grid-item-c {
-	/*grid-area: 6 / 1 / span 1 / span 2;*/
 	grid-area: 3 / 1 / span 1 / span 2;
 	z-index: 1;
 }
 
 #about-my-dad-grid-item-d {
-    /*grid-area: 5 / 2 / span 3 / span 2;*/
     grid-area: 3 / 2 / span 1 / span 2;
+}
+
+#about-my-dad p {
+	background-color: white;
 }
 
 /*My dad's work*/
